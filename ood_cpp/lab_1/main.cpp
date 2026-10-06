@@ -30,7 +30,6 @@ int main()
 
         std::stringstream ss(line);
 
-        // Формат: Фамилия Имя ГодРождения
         ss >> person.lastName;
         ss >> person.firstName;
         ss >> word;
@@ -43,14 +42,8 @@ int main()
 
         // 2. Записываем данные в нужный файл согласно категории
         savePersonToFile(person);
-
-        std::cout << person.lastName << " "
-                  << person.firstName << " "
-                  << person.birthYear << " -> Категория: "
-                  << person.pCategory << std::endl;
     }
 
     file.close();
-    std::cout << "Обработка завершена. Данные распределены по файлам children.txt, teens.txt, adults.txt" << std::endl;
     return 0;
 }

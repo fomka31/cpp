@@ -1,6 +1,0 @@
-{
-  "name": "Person Categorizer & Manager",
-  "description": "Interactive web migration of the C++ Object-Oriented Design Person Categorization lab. Manage persons, classify age categories (Child, Teen, Adult), import/export data, and inspect C++ source mapping.",
-  "permissions": [],
-  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
-}
