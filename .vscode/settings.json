@@ -1,3 +1,4 @@
 {
-    "geminicodeassist.outlines.automaticOutlineGeneration": true
+    "geminicodeassist.outlines.automaticOutlineGeneration": true,
+    "cmake.sourceDirectory": "C:/Users/fedor/Documents/GitHub/cpp/ood_cpp/lab_2"
 }
