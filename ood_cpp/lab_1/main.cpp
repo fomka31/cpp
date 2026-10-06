@@ -3,7 +3,6 @@
 #include <string>
 #include <sstream>
 #include "personapi.h"
-#include "person.cpp"
 
 int main() 
 {

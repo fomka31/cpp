@@ -4,17 +4,10 @@
     {
       "type": "shell",
       "label": "C/C++: cl.exe build active file",
-      "command": "cl.exe",
+      "command": "cmd.exe",
       "args": [
-        "/Zi",
-        "/EHsc",
-        "/nologo",
-        "/std:c++17",
-        "/utf-8",
-        "/Fe${fileDirname}\\main.exe",
-        "${fileDirname}\\main.cpp",
-        "${fileDirname}\\Time.cpp",
-        "${fileDirname}\\Flight.cpp"
+        "/c",
+        "cl.exe /Zi /EHsc /nologo /std:c++17 /utf-8 /Fe:main.exe *.cpp"
       ],
       "options": {
         "cwd": "${fileDirname}"
@@ -24,7 +17,7 @@
         "kind": "build",
         "isDefault": true
       },
-      "detail": "Сборка всех файлов проекта (main.cpp, Time.cpp, Flight.cpp)"
+      "detail": "Компилирует все .cpp файлы текущей папки в main.exe"
     }
   ]
 }
