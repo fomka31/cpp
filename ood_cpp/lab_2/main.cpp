@@ -4,8 +4,21 @@
 #include <fstream>
 #include <vector>
 #include <iomanip>
+#include <clocale>
+
+#ifdef _WIN32
+#include <windows.h>
+#endif
 
 int main() {
+#ifdef _WIN32
+    SetConsoleCP(CP_UTF8);
+    SetConsoleOutputCP(CP_UTF8);
+    system("chcp 65001 > nul");
+#endif
+    std::setlocale(LC_ALL, "ru_RU.UTF-8");
+
+    // ... остальной код main()
     std::cout << "=====================================================\n";
     std::cout << "   ДЕМОНСТРАЦИЯ РАБОТЫ КЛАССА Time И РАСПИСАНИЯ      \n";
     std::cout << "=====================================================\n\n";

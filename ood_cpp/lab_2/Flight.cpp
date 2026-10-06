@@ -12,7 +12,8 @@ std::string Flight::getDestination() const { return destination; }
 Time Flight::getDepartureTime() const { return departureTime; }
 
 void Flight::print() const {
-    std::cout << std::left << std::setw(10) << flightNumber
+    std::cout << std::setfill(' ') << std::left
+              << std::setw(10) << flightNumber
               << std::setw(20) << destination
               << " " << departureTime.toString() << std::endl;
 }

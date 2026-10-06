@@ -34,10 +34,7 @@ void Time::setTime(int h, int m, int s) {
 }
 
 void Time::info() const {
-    std::cout << std::setfill('0')
-              << std::setw(2) << hours << ":"
-              << std::setw(2) << minutes << ":"
-              << std::setw(2) << seconds << std::endl;
+    std::cout << toString() << std::endl;
 }
 
 std::string Time::toString() const {
