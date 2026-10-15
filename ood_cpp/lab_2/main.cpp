@@ -14,7 +14,6 @@ int main() {
     system("chcp 65001 > nul");
 #endif
 
-    // Демонстрация конструкторов и info()
     Time t1;
     std::cout << "Время по умолчанию: ";
     t1.info();
@@ -45,9 +44,8 @@ int main() {
     std::cout << "- время (01:20:30): ";
     t2.info();
 
-    // Вывод рейсов в интервале от 10:00:00 до 13:00:00
-    std::cout << "\nРейсы от 10:00:00 до 13:00:00:\n";
-    Time start(10, 0, 0);
+    std::cout << "\nРейсы от 11:00:00 до 13:00:00:\n";
+    Time start(11, 0, 0);
     Time end(13, 0, 0);
 
     std::ifstream file("flights.txt");
